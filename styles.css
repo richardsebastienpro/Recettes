@@ -259,3 +259,24 @@ h3.section-label {
   font-size: 0.9rem;
   color: var(--ink-soft);
 }
+
+/* --- Photo --- */
+.recipe-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--paper-line);
+  box-shadow: var(--shadow);
+  margin: 0 0 28px;
+  display: block;
+}
+
+.recipe-thumb {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--paper-line);
+}
