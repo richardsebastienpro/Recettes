@@ -280,3 +280,19 @@ h3.section-label {
   object-fit: cover;
   border: 1px solid var(--paper-line);
 }
+
+.recipe-illustration {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  border: 1px solid var(--paper-line);
+  box-shadow: var(--shadow);
+  margin: 0 0 28px;
+  background:
+    radial-gradient(circle at 20% 15%, var(--paper), transparent 60%),
+    var(--paper-deep);
+  display: block;
+  overflow: hidden;
+}
+
+.recipe-illustration svg { width: 100%; height: 100%; }
