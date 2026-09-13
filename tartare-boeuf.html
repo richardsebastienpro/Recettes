@@ -17,22 +17,26 @@
 
 
   <div class="recipe-meta">
-    <div><strong>2</strong>personnes</div>
+    <div class="people-box" data-base-people="2">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">2</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~20 min</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Boeuf maigre (rumsteck, filet ou tende de tranche), décongelé</span><span class="qty">300 g</span></li>
-    <li><span>Échalote, ciselée finement</span><span class="qty">1</span></li>
-    <li><span>Cornichons, hachés finement</span><span class="qty">4</span></li>
-    <li><span>Câpres, hachées</span><span class="qty">1 c. à soupe</span></li>
-    <li><span>Persil plat, ciselé</span><span class="qty">1 c. à soupe</span></li>
-    <li><span>Moutarde de Dijon</span><span class="qty">1 c. à café</span></li>
-    <li><span>Jaune d'oeuf (facultatif)</span><span class="qty">1</span></li>
-    <li><span>Huile d'olive</span><span class="qty">1 c. à soupe</span></li>
-    <li><span>Sauce Worcestershire</span><span class="qty">1/2 c. à café</span></li>
-    <li><span>Sel fin</span><span class="qty">1/2 c. à café</span></li>
+    <li><span>Boeuf maigre (rumsteck, filet ou tende de tranche), décongelé</span><span class="qty" data-qty="300" data-unit="g" data-round="10">300 g</span></li>
+    <li><span>Échalote, ciselée finement</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Cornichons, hachés finement</span><span class="qty" data-qty="4" data-fmt="int">4</span></li>
+    <li><span>Câpres, hachées</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à soupe">1 c. à soupe</span></li>
+    <li><span>Persil plat, ciselé</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à soupe">1 c. à soupe</span></li>
+    <li><span>Moutarde de Dijon</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Jaune d'oeuf (facultatif)</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Huile d'olive</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à soupe">1 c. à soupe</span></li>
+    <li><span>Sauce Worcestershire</span><span class="qty" data-qty="0.5" data-fmt="frac" data-unit="c. à café">1/2 c. à café</span></li>
+    <li><span>Sel fin</span><span class="qty" data-qty="0.5" data-fmt="frac" data-unit="c. à café">1/2 c. à café</span></li>
     <li><span>Poivre du moulin</span><span class="qty">1 pincée</span></li>
     <li><span>Tabasco (facultatif)</span><span class="qty">2 pincées</span></li>
   </ul>
@@ -50,5 +54,6 @@
 
   <p class="note">Décongélation obligatoire au réfrigérateur, jamais à température ambiante. Une fois décongelée, la viande se conserve 24h maximum et ne doit pas être recongelée. Préparer et consommer le tartare le jour même, en gardant tout au frais jusqu'au dernier moment.</p>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>

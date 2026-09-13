@@ -181,6 +181,47 @@ body {
   font-size: 1.15rem;
 }
 
+.people-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.people-count {
+  text-align: center;
+  flex: 1;
+}
+
+.people-btn {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--paper-line);
+  background: var(--paper);
+  color: var(--bordeaux);
+  font-family: 'Newsreader', serif;
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background .15s ease, color .15s ease;
+}
+
+.people-btn:hover {
+  background: var(--bordeaux);
+  color: var(--card);
+  border-color: var(--bordeaux);
+}
+
+.qty.is-scaled {
+  color: var(--bordeaux);
+}
+
 h3.section-label {
   font-family: 'Newsreader', serif;
   font-weight: 600;
