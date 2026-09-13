@@ -16,22 +16,26 @@
   <img class="recipe-photo" src="moules-bleu.jpg" alt="Moules au bleu (Roquefort)">
 
   <div class="recipe-meta">
-    <div><strong>4</strong>personnes</div>
+    <div class="people-box" data-base-people="4">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">4</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~30 min</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Moules de bouchot, grattées et ébarbées</span><span class="qty">2 kg</span></li>
-    <li><span>Échalotes, ciselées</span><span class="qty">3</span></li>
-    <li><span>Gousse d'ail, hachée</span><span class="qty">1</span></li>
-    <li><span>Beurre</span><span class="qty">30 g</span></li>
-    <li><span>Vin blanc sec</span><span class="qty">200 ml</span></li>
-    <li><span>Crème fraîche épaisse</span><span class="qty">200 ml</span></li>
-    <li><span>Roquefort (ou bleu d'Auvergne), émietté</span><span class="qty">150 g</span></li>
+    <li><span>Moules de bouchot, grattées et ébarbées</span><span class="qty" data-qty="2" data-unit="kg" data-round="0.25">2 kg</span></li>
+    <li><span>Échalotes, ciselées</span><span class="qty" data-qty="3" data-fmt="int">3</span></li>
+    <li><span>Gousse d'ail, hachée</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Beurre</span><span class="qty" data-qty="30" data-unit="g" data-round="5">30 g</span></li>
+    <li><span>Vin blanc sec</span><span class="qty" data-qty="200" data-unit="ml" data-round="25">200 ml</span></li>
+    <li><span>Crème fraîche épaisse</span><span class="qty" data-qty="200" data-unit="ml" data-round="25">200 ml</span></li>
+    <li><span>Roquefort (ou bleu d'Auvergne), émietté</span><span class="qty" data-qty="150" data-unit="g" data-round="25">150 g</span></li>
     <li><span>Poivre du moulin</span><span class="qty">1 pincée</span></li>
-    <li><span>Persil plat frais, ciselé</span><span class="qty">2 c. à soupe</span></li>
-    <li><span>Noix, concassées (facultatif)</span><span class="qty">2 c. à soupe</span></li>
+    <li><span>Persil plat frais, ciselé</span><span class="qty" data-qty="2" data-fmt="frac" data-unit="c. à soupe">2 c. à soupe</span></li>
+    <li><span>Noix, concassées (facultatif)</span><span class="qty" data-qty="2" data-fmt="frac" data-unit="c. à soupe">2 c. à soupe</span></li>
   </ul>
 
   <h3 class="section-label">Étapes</h3>
@@ -45,5 +49,6 @@
 
   <p class="note">Choisir un bleu pas trop fort (type bleu d'Auvergne) pour une saveur plus douce, ou du roquefort pour un goût plus corsé. Une partie de la crème peut être remplacée par du Saint-Marcellin ou du Saint-Félicien pour une texture encore plus fondante. Éviter de resaler avant d'avoir goûté la sauce finale.</p>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>

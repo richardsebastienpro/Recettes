@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --paper: #F3E9D8;
-  --paper-deep: #EADFC8;
-  --card: #FBF6EC;
-  --paper-line: #DCCBA8;
-  --ink: #2B2620;
-  --ink-soft: #6B6152;
-  --bordeaux: #8C3230;
-  --bordeaux-deep: #6E2624;
-  --copper: #C08A4A;
-  --shadow: 0 6px 18px rgba(43, 38, 32, 0.10);
+  --paper: #FBF2E1;
+  --paper-deep: #F2E2C4;
+  --card: #FFFFFF;
+  --paper-line: #EAD9B4;
+  --ink: #2E2A20;
+  --ink-soft: #756C59;
+  --bordeaux: #C1502E;
+  --bordeaux-deep: #9E3F22;
+  --copper: #7E9A5C;
+  --mustard: #DDA22C;
+  --shadow: 0 6px 18px rgba(43, 38, 32, 0.09);
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +19,8 @@
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 15% 0%, var(--paper-deep), transparent 55%),
+    radial-gradient(circle at 12% -5%, #FCE2C6, transparent 45%),
+    radial-gradient(circle at 100% 10%, #E4EBD6, transparent 40%),
     var(--paper);
   color: var(--ink);
   font-family: 'Public Sans', sans-serif;
@@ -255,7 +257,7 @@ h3.section-label {
 .ingredients li:last-child { border-bottom: none; }
 
 .ingredients .qty {
-  color: var(--copper);
+  color: var(--mustard);
   white-space: nowrap;
   font-weight: 700;
   font-size: 0.9rem;

@@ -16,21 +16,25 @@
   <img class="recipe-photo" src="sauce-cesar.jpg" alt="Salade César">
 
   <div class="recipe-meta">
-    <div><strong>4</strong>personnes</div>
+    <div class="people-box" data-base-people="4">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">4</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~15 min</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Jaune d'oeuf</span><span class="qty">1</span></li>
-    <li><span>Filets d'anchois à l'huile</span><span class="qty">4</span></li>
-    <li><span>Gousse d'ail</span><span class="qty">1</span></li>
-    <li><span>Moutarde de Dijon</span><span class="qty">1 c. à café</span></li>
-    <li><span>Jus de citron</span><span class="qty">2 c. à soupe</span></li>
-    <li><span>Sauce Worcestershire</span><span class="qty">1 c. à café</span></li>
-    <li><span>Huile d'olive</span><span class="qty">120 ml</span></li>
-    <li><span>Parmesan râpé finement</span><span class="qty">40 g</span></li>
-    <li><span>Poivre noir fraîchement moulu</span><span class="qty">1/2 c. à café</span></li>
+    <li><span>Jaune d'oeuf</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Filets d'anchois à l'huile</span><span class="qty" data-qty="4" data-fmt="int">4</span></li>
+    <li><span>Gousse d'ail</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Moutarde de Dijon</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Jus de citron</span><span class="qty" data-qty="2" data-fmt="frac" data-unit="c. à soupe">2 c. à soupe</span></li>
+    <li><span>Sauce Worcestershire</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Huile d'olive</span><span class="qty" data-qty="120" data-unit="ml" data-round="10">120 ml</span></li>
+    <li><span>Parmesan râpé finement</span><span class="qty" data-qty="40" data-unit="g" data-round="5">40 g</span></li>
+    <li><span>Poivre noir fraîchement moulu</span><span class="qty" data-qty="0.5" data-fmt="frac" data-unit="c. à café">1/2 c. à café</span></li>
     <li><span>Sel</span><span class="qty">1 pincée</span></li>
   </ul>
 
@@ -43,5 +47,6 @@
 
   <p class="note">Pour une sauce plus fluide, ajouter 1 à 2 c. à soupe d'eau froide et fouetter. Sans anchois, remplacer par 1 c. à café de pâte de miso blanche + quelques câpres. Se garde 3 jours au réfrigérateur dans un bocal fermé. Pour une version rapide, partir d'une base de mayonnaise du commerce.</p>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>

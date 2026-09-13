@@ -16,30 +16,34 @@
   <img class="recipe-photo" src="lasagnes-haricots-rouges.jpg" alt="Lasagnes végétariennes aux haricots rouges">
 
   <div class="recipe-meta">
-    <div><strong>6</strong>personnes</div>
+    <div class="people-box" data-base-people="6">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">6</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~1h15</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Plaques de lasagnes</span><span class="qty">12</span></li>
-    <li><span>Haricots rouges cuits, égouttés</span><span class="qty">400 g</span></li>
-    <li><span>Tomates concassées</span><span class="qty">800 g</span></li>
-    <li><span>Oignon, émincé</span><span class="qty">1</span></li>
-    <li><span>Gousses d'ail, hachées</span><span class="qty">2</span></li>
-    <li><span>Poivron rouge, en dés</span><span class="qty">1</span></li>
-    <li><span>Carotte, en petits dés</span><span class="qty">1</span></li>
-    <li><span>Concentré de tomate</span><span class="qty">1 c. à soupe</span></li>
-    <li><span>Cumin en poudre</span><span class="qty">1 c. à café</span></li>
-    <li><span>Paprika fumé</span><span class="qty">1 c. à café</span></li>
-    <li><span>Huile d'olive</span><span class="qty">2 c. à soupe</span></li>
-    <li><span>Beurre</span><span class="qty">50 g</span></li>
-    <li><span>Farine</span><span class="qty">50 g</span></li>
-    <li><span>Lait</span><span class="qty">600 ml</span></li>
+    <li><span>Plaques de lasagnes</span><span class="qty" data-qty="12" data-fmt="int">12</span></li>
+    <li><span>Haricots rouges cuits, égouttés</span><span class="qty" data-qty="400" data-unit="g" data-round="25">400 g</span></li>
+    <li><span>Tomates concassées</span><span class="qty" data-qty="800" data-unit="g" data-round="50">800 g</span></li>
+    <li><span>Oignon, émincé</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Gousses d'ail, hachées</span><span class="qty" data-qty="2" data-fmt="int">2</span></li>
+    <li><span>Poivron rouge, en dés</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Carotte, en petits dés</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Concentré de tomate</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à soupe">1 c. à soupe</span></li>
+    <li><span>Cumin en poudre</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Paprika fumé</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Huile d'olive</span><span class="qty" data-qty="2" data-fmt="frac" data-unit="c. à soupe">2 c. à soupe</span></li>
+    <li><span>Beurre</span><span class="qty" data-qty="50" data-unit="g" data-round="5">50 g</span></li>
+    <li><span>Farine</span><span class="qty" data-qty="50" data-unit="g" data-round="5">50 g</span></li>
+    <li><span>Lait</span><span class="qty" data-qty="600" data-unit="ml" data-round="50">600 ml</span></li>
     <li><span>Noix de muscade</span><span class="qty">1 pincée</span></li>
-    <li><span>Fromage râpé (emmental ou comté)</span><span class="qty">100 g</span></li>
-    <li><span>Sel</span><span class="qty">1 c. à café</span></li>
-    <li><span>Poivre</span><span class="qty">1/2 c. à café</span></li>
+    <li><span>Fromage râpé (emmental ou comté)</span><span class="qty" data-qty="100" data-unit="g" data-round="10">100 g</span></li>
+    <li><span>Sel</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Poivre</span><span class="qty" data-qty="0.5" data-fmt="frac" data-unit="c. à café">1/2 c. à café</span></li>
   </ul>
 
   <h3 class="section-label">Étapes</h3>
@@ -55,5 +59,6 @@
 
   <p class="note">Ajouter du maïs ou une pointe de piment pour renforcer le côté chili. Les haricots peuvent être partiellement écrasés à la fourchette pour lier la sauce. Ça se réchauffe très bien le lendemain.</p>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>

@@ -16,17 +16,21 @@
   <img class="recipe-photo" src="carbonara.jpg" alt="Pâtes à la carbonara">
 
   <div class="recipe-meta">
-    <div><strong>2</strong>personnes</div>
+    <div class="people-box" data-base-people="2">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">2</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~20 min</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Spaghetti ou pâtes de votre choix</span><span class="qty">200 g</span></li>
-    <li><span>Lardons ou pancetta</span><span class="qty">150 g</span></li>
-    <li><span>Œufs entiers</span><span class="qty">2</span></li>
-    <li><span>Jaune d'oeuf supplémentaire</span><span class="qty">1</span></li>
-    <li><span>Parmesan râpé</span><span class="qty">50 g</span></li>
+    <li><span>Spaghetti ou pâtes de votre choix</span><span class="qty" data-qty="200" data-unit="g" data-round="25">200 g</span></li>
+    <li><span>Lardons ou pancetta</span><span class="qty" data-qty="150" data-unit="g" data-round="25">150 g</span></li>
+    <li><span>Œufs entiers</span><span class="qty" data-qty="2" data-fmt="int">2</span></li>
+    <li><span>Jaune d'oeuf supplémentaire</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
+    <li><span>Parmesan râpé</span><span class="qty" data-qty="50" data-unit="g" data-round="5">50 g</span></li>
     <li><span>Sel</span><span class="qty">au goût</span></li>
     <li><span>Poivre noir</span><span class="qty">au goût</span></li>
     <li><span>Huile d'olive (facultatif)</span><span class="qty">un peu</span></li>
@@ -43,5 +47,6 @@
     <li>Servir immédiatement avec un peu de parmesan supplémentaire si désiré.</li>
   </ol>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>

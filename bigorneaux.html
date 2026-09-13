@@ -16,19 +16,23 @@
   <img class="recipe-photo" src="bigorneaux.jpg" alt="Bigorneaux">
 
   <div class="recipe-meta">
-    <div><strong>4</strong>personnes</div>
+    <div class="people-box" data-base-people="4">
+      <button type="button" class="people-btn" data-action="dec" aria-label="Moins de personnes">−</button>
+      <div class="people-count"><strong class="people-value">4</strong>personnes</div>
+      <button type="button" class="people-btn" data-action="inc" aria-label="Plus de personnes">+</button>
+    </div>
     <div><strong>~15 min</strong>préparation</div>
   </div>
 
   <h3 class="section-label">Ingrédients</h3>
   <ul class="ingredients">
-    <li><span>Bigorneaux</span><span class="qty">1 kg</span></li>
-    <li><span>Eau (pour couvrir)</span><span class="qty">1,5 l environ</span></li>
+    <li><span>Bigorneaux</span><span class="qty" data-qty="1" data-unit="kg" data-round="0.25">1 kg</span></li>
+    <li><span>Eau (pour couvrir)</span><span class="qty" data-qty="1.5" data-unit="l environ" data-round="0.25">1,5 l environ</span></li>
     <li><span>Gros sel</span><span class="qty">40 g / litre</span></li>
-    <li><span>Feuille de laurier</span><span class="qty">1</span></li>
+    <li><span>Feuille de laurier</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
     <li><span>Thym frais</span><span class="qty">quelques branches</span></li>
-    <li><span>Poivre en grains</span><span class="qty">1 c. à café</span></li>
-    <li><span>Citron, en quartiers</span><span class="qty">1</span></li>
+    <li><span>Poivre en grains</span><span class="qty" data-qty="1" data-fmt="frac" data-unit="c. à café">1 c. à café</span></li>
+    <li><span>Citron, en quartiers</span><span class="qty" data-qty="1" data-fmt="int">1</span></li>
   </ul>
 
   <h3 class="section-label">Étapes</h3>
@@ -42,5 +46,6 @@
 
   <p class="note">Ne pas dépasser 8 minutes de cuisson, la chair devient vite caoutchouteuse. Se dégustent bien en ouverture, avant des huîtres par exemple.</p>
 </div>
+<script src="scale.js"></script>
 </body>
 </html>
